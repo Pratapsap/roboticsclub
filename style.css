@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+nav{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 8rem;
+    padding: 1% 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+  .nav-links{
+    text-align: right;
+    margin-right: 0%;
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 19px;
+    position: relative;
+  }
+  .nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+  }
+  .nav-links ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:yellow;;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li a:hover::after{
+    width: 100%;
+  }
+  .nav-logo h1{
+      color: #fff;
+      font-size: 30px;
+      margin-left: 5px;
+  }
+  .nav-logo span{
+      color: yellow;
+  }
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*hero section*/
+#hero{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(photo/Banner.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+.container h1{
+    font-size: 80px;
+    color: azure;
+    margin-bottom: 3rem;
+}
+.container h1 span{
+    color: yellow;
+}
+.container a{
+    color: azure;
+    font-size: 20px;
+    margin-left: 15rem;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.container a:hover{
+    background: red ;
+    transition: 0.5s;
+}
+/*hero section*/
+/*about section*/
+#about{
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    min-height: 60vh;
+    margin: auto;
+}
+.title h1{
+    text-align: center;
+    color:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ;
+    font-size: 40px;
+    margin-top: 7rem;
+    text-decoration: black;
+}
+.row2{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 6rem;
+    margin-top: 6rem;
+    text-align:left ;
+}
+.paragraph h1 {
+    font-size: 30px;
+    margin-bottom: 2rem;
+} 
+.paragraph h1 span{
+    color: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+}
+.paragraph p{
+ font-size: 20px;
+}
+.about-photo img{
+    height: 22rem;
+    width: 35rem;
+}
+/*----------project section--------------------------*/
+#project{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 5rem;
+    margin-top: 7rem;
+}
+.service h1{
+    font-size: 40px;
+    padding-bottom: 1px;
+}
+.service p{
+    font-size: 30px;
+    color: lightseagreen;
+    padding-bottom: 1rem;
+
+}
+.service-col{
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.service-col img{
+    width: 100%;
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.service-col h3{
+    font-size: 30px;
+}
+.layer{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 00.5s;     
+}
+.layer:hover{
+    background-color:rgb(255,255,224);
+
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: brown;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+     bottom: 49%;
+     opacity: 1;
+}
+/*--------------------------------project section end-------------*/
+/*--------------------------contact us ----------------------*/
+#Contact{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.row1{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 3rem;
+}
+.title h1{
+    margin-bottom: 3rem;
+}
+.email{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 1px;
+}
+.photo img{
+    height: 60px;
+    width: 80px;
+}
+.des h3{
+    font-size: 20px;
+    margin: auto;
+    margin-top: 5px;
+}
+.des p{
+    font-size: 15px;
+    margin: auto;
+    margin-top: 5px;
+}
+.email:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+/**----------------------footer----------------*/
+.footer{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) , url(photo/Banner.jpg) ;
+    width: 100%;
+    min-height: 50vh;
+    margin: 10px auto;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 3rem;
+}
+  
+  .foot{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+       grid-gap: 9rem;
+}
+  .about{
+    color: #fff;
+    padding-left: 1rem;
+}
+  .about h1{
+    font-size: 40px;
+}
+  .about p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+  span{
+    color: yellow;
+}
+  .logo h1{
+    margin-top: 7rem;
+    font-size: 65px;
+    color: #fff;
+}
+  .logo .fab {
+    font-size: 30px;
+    color: #fff;
+    margin-top: 4rem;
+    padding: 5px;
+}
+  .logo .fab:hover{
+   color: yellow;
+}
+  .ptr{
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+}
+  .ptr h1{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}  
+    
+    
+  .contact-input{
+    background: #fff;
+    color: #bebdbd;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: 1.7rem,1.2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    size: 3vh;
+    width: 300px;
+}
+  .btn{
+    font-size: 19px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 10px;
+}
+  .btn:hover{
+    background: red ;
+    transition: 0.5s;
+}
+  .copyright{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 2rem;
+    font-weight:bolder ;
+}
